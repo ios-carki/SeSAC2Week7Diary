@@ -13,7 +13,54 @@
 		C382D68328AB1FCA0099F03C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C382D68128AB1FCA0099F03C /* Main.storyboard */; };
 		C382D68528AB1FCB0099F03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C382D68428AB1FCB0099F03C /* Assets.xcassets */; };
 		C382D68828AB1FCB0099F03C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C382D68628AB1FCB0099F03C /* LaunchScreen.storyboard */; };
+		C382D6AB28AB2C3C0099F03C /* SeSAC2UIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C382D6A828AB2C2B0099F03C /* SeSAC2UIFramework.framework */; };
+		C382D6AC28AB2C3C0099F03C /* SeSAC2UIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C382D6A828AB2C2B0099F03C /* SeSAC2UIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C382D6B228AB3A6C0099F03C /* WalkThrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C382D6B128AB3A6C0099F03C /* WalkThrough.storyboard */; };
+		C382D6B428AB3A980099F03C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382D6B328AB3A980099F03C /* FirstViewController.swift */; };
+		C382D6B628AB40C10099F03C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382D6B528AB40C10099F03C /* SecondViewController.swift */; };
+		C382D6B828AB40CB0099F03C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382D6B728AB40CB0099F03C /* ThirdViewController.swift */; };
+		C382D6BA28AB41390099F03C /* WalkThroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382D6B928AB41390099F03C /* WalkThroughPageViewController.swift */; };
+		C3D77C9C28AC71AC00989003 /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D77C9B28AC71AC00989003 /* CodeViewController.swift */; };
+		C3D77C9F28AC81C700989003 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C3D77C9E28AC81C700989003 /* Lottie */; };
+		C3D77CA628AC823000989003 /* CodeSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D77CA528AC823000989003 /* CodeSnapViewController.swift */; };
+		C3D77CA928AC8A8700989003 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C3D77CA828AC8A8700989003 /* SnapKit */; };
+		C3D77CAB28AC8C0F00989003 /* CodeSnap2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D77CAA28AC8C0F00989003 /* CodeSnap2ViewController.swift */; };
+		C3D77CAF28ACDA7500989003 /* KakaoProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D77CAE28ACDA7500989003 /* KakaoProfileViewController.swift */; };
+		C3D77CB128ACDA9300989003 /* Kakao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D77CB028ACDA9300989003 /* Kakao.storyboard */; };
+		C3D77CB328ACDAB400989003 /* KakaoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D77CB228ACDAB400989003 /* KakaoLayout.swift */; };
+		C3D77CB628AD060E00989003 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C3D77CB528AD060E00989003 /* Kingfisher */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C382D6A728AB2C2B0099F03C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C382D6A228AB2C2B0099F03C /* SeSAC2UIFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C382D65328AB1BC00099F03C;
+			remoteInfo = SeSAC2UIFramework;
+		};
+		C382D6A928AB2C2B0099F03C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C382D6A228AB2C2B0099F03C /* SeSAC2UIFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C382D65D28AB1BC00099F03C;
+			remoteInfo = SeSAC2UIFrameworkTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C382D69B28AB20E60099F03C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C382D6AC28AB2C3C0099F03C /* SeSAC2UIFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C382D67828AB1FCA0099F03C /* SeSAC2Week7Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC2Week7Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +71,18 @@
 		C382D68428AB1FCB0099F03C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C382D68728AB1FCB0099F03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C382D68928AB1FCB0099F03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C382D6A228AB2C2B0099F03C /* SeSAC2UIFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SeSAC2UIFramework.xcodeproj; path = ../SeSAC2UIFramework/SeSAC2UIFramework.xcodeproj; sourceTree = "<group>"; };
+		C382D6B128AB3A6C0099F03C /* WalkThrough.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalkThrough.storyboard; sourceTree = "<group>"; };
+		C382D6B328AB3A980099F03C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		C382D6B528AB40C10099F03C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		C382D6B728AB40CB0099F03C /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		C382D6B928AB41390099F03C /* WalkThroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughPageViewController.swift; sourceTree = "<group>"; };
+		C3D77C9B28AC71AC00989003 /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
+		C3D77CA528AC823000989003 /* CodeSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnapViewController.swift; sourceTree = "<group>"; };
+		C3D77CAA28AC8C0F00989003 /* CodeSnap2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnap2ViewController.swift; sourceTree = "<group>"; };
+		C3D77CAE28ACDA7500989003 /* KakaoProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoProfileViewController.swift; sourceTree = "<group>"; };
+		C3D77CB028ACDA9300989003 /* Kakao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Kakao.storyboard; sourceTree = "<group>"; };
+		C3D77CB228ACDAB400989003 /* KakaoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +90,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D77CB628AD060E00989003 /* Kingfisher in Frameworks */,
+				C3D77CA928AC8A8700989003 /* SnapKit in Frameworks */,
+				C382D6AB28AB2C3C0099F03C /* SeSAC2UIFramework.framework in Frameworks */,
+				C3D77C9F28AC81C700989003 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +103,10 @@
 		C382D66F28AB1FCA0099F03C = {
 			isa = PBXGroup;
 			children = (
+				C382D6A228AB2C2B0099F03C /* SeSAC2UIFramework.xcodeproj */,
 				C382D67A28AB1FCA0099F03C /* SeSAC2Week7Diary */,
 				C382D67928AB1FCA0099F03C /* Products */,
+				C382D69828AB20E60099F03C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +121,9 @@
 		C382D67A28AB1FCA0099F03C /* SeSAC2Week7Diary */ = {
 			isa = PBXGroup;
 			children = (
+				C3D77CAC28ACDA4000989003 /* KakaoProfileCodeBase */,
+				C3D77C9828AC718F00989003 /* CodeBase */,
+				C382D6AE28AB3A380099F03C /* WalkThrough */,
 				C382D67B28AB1FCA0099F03C /* AppDelegate.swift */,
 				C382D67D28AB1FCA0099F03C /* SceneDelegate.swift */,
 				C382D67F28AB1FCA0099F03C /* ViewController.swift */,
@@ -65,6 +133,54 @@
 				C382D68928AB1FCB0099F03C /* Info.plist */,
 			);
 			path = SeSAC2Week7Diary;
+			sourceTree = "<group>";
+		};
+		C382D69828AB20E60099F03C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C382D6A328AB2C2B0099F03C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C382D6A828AB2C2B0099F03C /* SeSAC2UIFramework.framework */,
+				C382D6AA28AB2C2B0099F03C /* SeSAC2UIFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C382D6AE28AB3A380099F03C /* WalkThrough */ = {
+			isa = PBXGroup;
+			children = (
+				C382D6B128AB3A6C0099F03C /* WalkThrough.storyboard */,
+				C382D6B328AB3A980099F03C /* FirstViewController.swift */,
+				C382D6B528AB40C10099F03C /* SecondViewController.swift */,
+				C382D6B728AB40CB0099F03C /* ThirdViewController.swift */,
+				C382D6B928AB41390099F03C /* WalkThroughPageViewController.swift */,
+			);
+			path = WalkThrough;
+			sourceTree = "<group>";
+		};
+		C3D77C9828AC718F00989003 /* CodeBase */ = {
+			isa = PBXGroup;
+			children = (
+				C3D77C9B28AC71AC00989003 /* CodeViewController.swift */,
+				C3D77CA528AC823000989003 /* CodeSnapViewController.swift */,
+				C3D77CAA28AC8C0F00989003 /* CodeSnap2ViewController.swift */,
+			);
+			path = CodeBase;
+			sourceTree = "<group>";
+		};
+		C3D77CAC28ACDA4000989003 /* KakaoProfileCodeBase */ = {
+			isa = PBXGroup;
+			children = (
+				C3D77CAE28ACDA7500989003 /* KakaoProfileViewController.swift */,
+				C3D77CB028ACDA9300989003 /* Kakao.storyboard */,
+				C3D77CB228ACDAB400989003 /* KakaoLayout.swift */,
+			);
+			path = KakaoProfileCodeBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,12 +193,18 @@
 				C382D67428AB1FCA0099F03C /* Sources */,
 				C382D67528AB1FCA0099F03C /* Frameworks */,
 				C382D67628AB1FCA0099F03C /* Resources */,
+				C382D69B28AB20E60099F03C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SeSAC2Week7Diary;
+			packageProductDependencies = (
+				C3D77C9E28AC81C700989003 /* Lottie */,
+				C3D77CA828AC8A8700989003 /* SnapKit */,
+				C3D77CB528AD060E00989003 /* Kingfisher */,
+			);
 			productName = SeSAC2Week7Diary;
 			productReference = C382D67828AB1FCA0099F03C /* SeSAC2Week7Diary.app */;
 			productType = "com.apple.product-type.application";
@@ -111,8 +233,19 @@
 				Base,
 			);
 			mainGroup = C382D66F28AB1FCA0099F03C;
+			packageReferences = (
+				C3D77C9D28AC81C700989003 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				C3D77CA728AC8A8700989003 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C3D77CB428AD060E00989003 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = C382D67928AB1FCA0099F03C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C382D6A328AB2C2B0099F03C /* Products */;
+					ProjectRef = C382D6A228AB2C2B0099F03C /* SeSAC2UIFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C382D67728AB1FCA0099F03C /* SeSAC2Week7Diary */,
@@ -120,12 +253,31 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		C382D6A828AB2C2B0099F03C /* SeSAC2UIFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SeSAC2UIFramework.framework;
+			remoteRef = C382D6A728AB2C2B0099F03C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C382D6AA28AB2C2B0099F03C /* SeSAC2UIFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SeSAC2UIFrameworkTests.xctest;
+			remoteRef = C382D6A928AB2C2B0099F03C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		C382D67628AB1FCA0099F03C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D77CB128ACDA9300989003 /* Kakao.storyboard in Resources */,
 				C382D68828AB1FCB0099F03C /* LaunchScreen.storyboard in Resources */,
+				C382D6B228AB3A6C0099F03C /* WalkThrough.storyboard in Resources */,
 				C382D68528AB1FCB0099F03C /* Assets.xcassets in Resources */,
 				C382D68328AB1FCA0099F03C /* Main.storyboard in Resources */,
 			);
@@ -140,7 +292,16 @@
 			files = (
 				C382D68028AB1FCA0099F03C /* ViewController.swift in Sources */,
 				C382D67C28AB1FCA0099F03C /* AppDelegate.swift in Sources */,
+				C3D77CAB28AC8C0F00989003 /* CodeSnap2ViewController.swift in Sources */,
+				C3D77CAF28ACDA7500989003 /* KakaoProfileViewController.swift in Sources */,
 				C382D67E28AB1FCA0099F03C /* SceneDelegate.swift in Sources */,
+				C382D6B628AB40C10099F03C /* SecondViewController.swift in Sources */,
+				C3D77CA628AC823000989003 /* CodeSnapViewController.swift in Sources */,
+				C382D6BA28AB41390099F03C /* WalkThroughPageViewController.swift in Sources */,
+				C3D77C9C28AC71AC00989003 /* CodeViewController.swift in Sources */,
+				C3D77CB328ACDAB400989003 /* KakaoLayout.swift in Sources */,
+				C382D6B828AB40CB0099F03C /* ThirdViewController.swift in Sources */,
+				C382D6B428AB3A980099F03C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +454,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +466,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +483,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +495,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +521,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3D77C9D28AC81C700989003 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		C3D77CA728AC8A8700989003 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C3D77CB428AD060E00989003 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3D77C9E28AC81C700989003 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3D77C9D28AC81C700989003 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		C3D77CA828AC8A8700989003 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3D77CA728AC8A8700989003 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C3D77CB528AD060E00989003 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3D77CB428AD060E00989003 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C382D67028AB1FCA0099F03C /* Project object */;
 }
