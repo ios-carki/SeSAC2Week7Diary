@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C371120B28ADDF1700BAC3EC /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371120A28ADDF1700BAC3EC /* UIViewController+Extension.swift */; };
+		C371120D28ADE60400BAC3EC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371120C28ADE60400BAC3EC /* ProfileViewController.swift */; };
 		C382D67C28AB1FCA0099F03C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382D67B28AB1FCA0099F03C /* AppDelegate.swift */; };
 		C382D67E28AB1FCA0099F03C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382D67D28AB1FCA0099F03C /* SceneDelegate.swift */; };
 		C382D68028AB1FCA0099F03C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382D67F28AB1FCA0099F03C /* ViewController.swift */; };
@@ -63,6 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C371120A28ADDF1700BAC3EC /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		C371120C28ADE60400BAC3EC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C382D67828AB1FCA0099F03C /* SeSAC2Week7Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC2Week7Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C382D67B28AB1FCA0099F03C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C382D67D28AB1FCA0099F03C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C371120728ADDEEC00BAC3EC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C371120A28ADDF1700BAC3EC /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		C382D66F28AB1FCA0099F03C = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +133,7 @@
 		C382D67A28AB1FCA0099F03C /* SeSAC2Week7Diary */ = {
 			isa = PBXGroup;
 			children = (
+				C371120728ADDEEC00BAC3EC /* Extension */,
 				C3D77CAC28ACDA4000989003 /* KakaoProfileCodeBase */,
 				C3D77C9828AC718F00989003 /* CodeBase */,
 				C382D6AE28AB3A380099F03C /* WalkThrough */,
@@ -131,6 +144,7 @@
 				C382D68428AB1FCB0099F03C /* Assets.xcassets */,
 				C382D68628AB1FCB0099F03C /* LaunchScreen.storyboard */,
 				C382D68928AB1FCB0099F03C /* Info.plist */,
+				C371120C28ADE60400BAC3EC /* ProfileViewController.swift */,
 			);
 			path = SeSAC2Week7Diary;
 			sourceTree = "<group>";
@@ -291,8 +305,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C382D68028AB1FCA0099F03C /* ViewController.swift in Sources */,
+				C371120B28ADDF1700BAC3EC /* UIViewController+Extension.swift in Sources */,
 				C382D67C28AB1FCA0099F03C /* AppDelegate.swift in Sources */,
 				C3D77CAB28AC8C0F00989003 /* CodeSnap2ViewController.swift in Sources */,
+				C371120D28ADE60400BAC3EC /* ProfileViewController.swift in Sources */,
 				C3D77CAF28ACDA7500989003 /* KakaoProfileViewController.swift in Sources */,
 				C382D67E28AB1FCA0099F03C /* SceneDelegate.swift in Sources */,
 				C382D6B628AB40C10099F03C /* SecondViewController.swift in Sources */,
