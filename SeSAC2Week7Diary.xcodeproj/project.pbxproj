@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		C371120B28ADDF1700BAC3EC /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371120A28ADDF1700BAC3EC /* UIViewController+Extension.swift */; };
 		C371120D28ADE60400BAC3EC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371120C28ADE60400BAC3EC /* ProfileViewController.swift */; };
+		C371121028AF127600BAC3EC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371120F28AF127600BAC3EC /* BaseViewController.swift */; };
+		C371121328AF144500BAC3EC /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371121228AF144500BAC3EC /* WriteViewController.swift */; };
+		C371121528AF169E00BAC3EC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371121428AF169E00BAC3EC /* BaseView.swift */; };
+		C371121728AF179C00BAC3EC /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371121628AF179C00BAC3EC /* WriteView.swift */; };
+		C371121A28AF2CFC00BAC3EC /* BlackRadiusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371121928AF2CFC00BAC3EC /* BlackRadiusTextField.swift */; };
 		C382D67C28AB1FCA0099F03C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382D67B28AB1FCA0099F03C /* AppDelegate.swift */; };
 		C382D67E28AB1FCA0099F03C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382D67D28AB1FCA0099F03C /* SceneDelegate.swift */; };
 		C382D68028AB1FCA0099F03C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C382D67F28AB1FCA0099F03C /* ViewController.swift */; };
@@ -67,6 +72,11 @@
 /* Begin PBXFileReference section */
 		C371120A28ADDF1700BAC3EC /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		C371120C28ADE60400BAC3EC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C371120F28AF127600BAC3EC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C371121228AF144500BAC3EC /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		C371121428AF169E00BAC3EC /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		C371121628AF179C00BAC3EC /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
+		C371121928AF2CFC00BAC3EC /* BlackRadiusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackRadiusTextField.swift; sourceTree = "<group>"; };
 		C382D67828AB1FCA0099F03C /* SeSAC2Week7Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC2Week7Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C382D67B28AB1FCA0099F03C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C382D67D28AB1FCA0099F03C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +122,33 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		C371120E28AF125700BAC3EC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C371121828AF2CD800BAC3EC /* CustomView */,
+				C371120F28AF127600BAC3EC /* BaseViewController.swift */,
+				C371121428AF169E00BAC3EC /* BaseView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C371121128AF141A00BAC3EC /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				C371121228AF144500BAC3EC /* WriteViewController.swift */,
+				C371121628AF179C00BAC3EC /* WriteView.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		C371121828AF2CD800BAC3EC /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				C371121928AF2CFC00BAC3EC /* BlackRadiusTextField.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		C382D66F28AB1FCA0099F03C = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +170,8 @@
 		C382D67A28AB1FCA0099F03C /* SeSAC2Week7Diary */ = {
 			isa = PBXGroup;
 			children = (
+				C371121128AF141A00BAC3EC /* Diary */,
+				C371120E28AF125700BAC3EC /* Utility */,
 				C371120728ADDEEC00BAC3EC /* Extension */,
 				C3D77CAC28ACDA4000989003 /* KakaoProfileCodeBase */,
 				C3D77C9828AC718F00989003 /* CodeBase */,
@@ -306,10 +345,14 @@
 			files = (
 				C382D68028AB1FCA0099F03C /* ViewController.swift in Sources */,
 				C371120B28ADDF1700BAC3EC /* UIViewController+Extension.swift in Sources */,
+				C371121728AF179C00BAC3EC /* WriteView.swift in Sources */,
 				C382D67C28AB1FCA0099F03C /* AppDelegate.swift in Sources */,
+				C371121528AF169E00BAC3EC /* BaseView.swift in Sources */,
 				C3D77CAB28AC8C0F00989003 /* CodeSnap2ViewController.swift in Sources */,
 				C371120D28ADE60400BAC3EC /* ProfileViewController.swift in Sources */,
+				C371121028AF127600BAC3EC /* BaseViewController.swift in Sources */,
 				C3D77CAF28ACDA7500989003 /* KakaoProfileViewController.swift in Sources */,
+				C371121A28AF2CFC00BAC3EC /* BlackRadiusTextField.swift in Sources */,
 				C382D67E28AB1FCA0099F03C /* SceneDelegate.swift in Sources */,
 				C382D6B628AB40C10099F03C /* SecondViewController.swift in Sources */,
 				C3D77CA628AC823000989003 /* CodeSnapViewController.swift in Sources */,
@@ -317,6 +360,7 @@
 				C3D77C9C28AC71AC00989003 /* CodeViewController.swift in Sources */,
 				C3D77CB328ACDAB400989003 /* KakaoLayout.swift in Sources */,
 				C382D6B828AB40CB0099F03C /* ThirdViewController.swift in Sources */,
+				C371121328AF144500BAC3EC /* WriteViewController.swift in Sources */,
 				C382D6B428AB3A980099F03C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

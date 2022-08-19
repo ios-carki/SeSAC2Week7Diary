@@ -25,16 +25,31 @@ class ViewController: UIViewController {
         
         configure()
         nameButton.addTarget(self, action: #selector(nameButtonClicked), for: .touchUpInside)
+        
+        
+    }
+    
+    @objc func saveButtonNotificationObserver(notification: NSNotification) {
+        if let name = notification.userInfo?["name"] as? String {
+            print(name)
+            self.nameButton.setTitle(name, for: .normal)
+        }
     }
     
     @objc func nameButtonClicked() {
-        let vc = ProfileViewController()
         
-        vc.saveButtonActionHandler = {
-            
-            self.nameButton.setTitle(vc.nameTextField.text, for: .normal)
-        }
-        present(vc, animated: true)
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        //!!!!!addObserver가 Post보다 먼저 등록되어야 한다!!!!!
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        NotificationCenter.default.post(name: NSNotification.Name("TEST"), object: nil, userInfo: ["name": "\(Int.random(in: 1...100))", "value": 123456])
+        
+        let vc = KakaoProfileViewController()
+
+//        vc.saveButtonActionHandler = { name in
+//
+//            self.nameButton.setTitle(name, for: .normal)
+//        }
+//        present(vc, animated: true)
     }
     
     func configure() {
